@@ -1,7 +1,5 @@
 <-- ABOUT THE PROJECT -->
-## Title
-Speed Detector
-
+## Speed Detector
 ## About The Project
 
 Based on the total number of demerit points accrued, this JavaScript code calculates the demerit points at a specific speed and determines whether the license should be suspended. The algorithm makes the necessary calculations by comparing the input speed with a predetermined speed limit.
@@ -13,7 +11,7 @@ Based on the total number of demerit points accrued, this JavaScript code calcul
 
 ### Built With
 
-This project was build using: 
+This project was built using: 
 
 1. HTML
 2. JavaScript
@@ -28,13 +26,13 @@ This is how the program works:
 3. The code reports "Ok" to the console, indicating that the speed is within the restriction, if the input speed is less than the speed limit.
 4. The code determines the demerit points if the input speed is greater than the speed limit by deducting the speed limit from the input speed and dividing the result by five. The demerit points are rounded down to the nearest full number using the Math.floor method.
 5. Using a template string, the calculated demerit points are recorded to the terminal.
-6. The code reports "License suspended" to the console if there are more than 12 demerit points, which indicates a severe violaion.
+6. The code reports "License suspended" to the console if there are more than 12 demerit points, which indicates a severe violation.
 
 
 
 ### Installation
 
-1. Optional git software in vscode can be installed in order to clone a repsitory to the local machine.
+1. Optional git software in vscode can be installed in order to clone a repository to the local machine.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,7 +47,7 @@ To use this code, you can follow these steps:
 
 2. Open the index.html file in a web browser.
 
-3. A prompt will appear asking you to enter your the speed of the vehicle. Enter a number and click "OK".
+3. A prompt will appear asking you to enter the speed of the vehicle. Enter a number and click "OK".
 
 4. A log will be displayed for your calculated grade.
 
