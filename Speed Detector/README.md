@@ -1,4 +1,4 @@
-<-- ABOUT THE PROJECT -->
+<!-- ABOUT THE PROJECT -->
 ## Speed Detector
 ## About The Project
 
