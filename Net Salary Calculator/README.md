@@ -1,7 +1,7 @@
-!-- ABOUT THE PROJECT -->
+<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This JavaScript code that computes an employee's net wage using their basic pay, benefits, and a variety of deductions, including PAYE, NHIF, and NSSF. The user is prompted to enter their basic compensation and benefits before the program does the required calculations and displays the net wage.
+This JavaScript code computes an employee's net wage using their basic pay, benefits, and a variety of deductions, including PAYE, NHIF, and NSSF. The user is prompted to enter their basic compensation and benefits before the program does the required calculations and displays the net wage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -9,7 +9,7 @@ This JavaScript code that computes an employee's net wage using their basic pay,
 
 ### Built With
 
-This project was build using: 
+This project was built using: 
 
 1. HTML
 2. JavaScript
@@ -26,7 +26,7 @@ This is how the program works:
 
 3. The gross pay is calculated by adding the basic salary and benefits and stored in the grossPay variable.
 
-4. The code determines the appropriate PAYE (Pay As You Earn) deduction based on the gross pay using conditional statements. The calculated PAYE amount is stored in the paye variable.
+4. Using conditional statements, The code determines the appropriate PAYE (Pay As You Earn) deduction based on the gross pay. The calculated PAYE amount is stored in the paye variable.
 
 4. An array of NHIF rates is defined, specifying income ranges and corresponding deductions. The code iterates over this array to find the NHIF rate that matches the gross pay. The corresponding deduction is stored in the nhifDeduction variable.
 
@@ -36,10 +36,12 @@ This is how the program works:
 
 7. The net salary is displayed in the browser's console.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ### Installation
 
-1. Optional git software in vscode can be installed in order to clone a repsitory to the local machine.
+1. Optional git software in vscode can be installed in order to clone a repository to the local machine.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
