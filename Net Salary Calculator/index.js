@@ -7,7 +7,7 @@ function salaryCalculator() {
   let grossPay = basSalary + benefit;
 
   //calculate paye based on gross salary.
-  let paye=0;
+  let paye = 0;
   if (grossPay > 800000) {
     paye = grossPay * 0.35;
   } else if (grossPay > 500000) {
@@ -39,35 +39,37 @@ function salaryCalculator() {
     { min: 70000, max: 79999, deduction: 1400 },
     { min: 80000, max: 89999, deduction: 1500 },
     { min: 90000, max: 99999, deduction: 1600 },
-    { min: 9000, max: Infinity, deduction: 1700 },
+    { min: 100000, max: Infinity, deduction: 1700 },
   ];
-// Calculate nhif Deduction
-let nhifDeduction = 0;
-for (let nhifrate of nhifrates) {
-  if (grossPay >= nhifrate.min && grossPay <= nhifrate.max) {
-    let nhifDeduction = nhifrate.deduction;
-    break;
+  // Calculate nhif Deduction
+  let nhifDeduction = 0;
+  for (let nhifrate of nhifrates) {
+    if (grossPay >= nhifrate.min && grossPay <= nhifrate.max) {
+      nhifDeduction = nhifrate.deduction;
+      break;
+    }
   }
-}
 
-let nssfrates = [
-  { min: 0, max: 6000 },
-  { min: 6001, max: 18000 },
-];
+  let nssfrates = [
+    { min: 0, max: 6000 },
+    { min: 6001, max: 18000 },
+  ];
 
-let nssfDeductions = 0;
-for (const i of nssfrates) {
-  if (grossPay >= i.min && grossPay <= i.max) {
-    nssfDeductions = grossPay * 0.06;
-    break;
+  let nssfDeductions = 0;
+  for (const i of nssfrates) {
+    if (grossPay >= i.min && grossPay <= i.max) {
+      nssfDeductions = grossPay * 0.06;
+      break;
+    }
   }
-}
-let netSalary = grossPay - (paye + nhifDeduction + nssfDeductions);
- console.log("Net Salary:", netSalary);
- console.log("PAYE:", paye);
- console.log("NHIF Deduction:", nhifDeduction);
- console.log("NSSF Deductions:", nssfDeductions);
+  
+  let netSalary = grossPay - (paye + nhifDeduction + nssfDeductions);
+  console.log("Gross Salary:", grossPay);
+  console.log("Net Salary:", netSalary);
+  console.log("PAYE:", paye);
+  console.log("NHIF Deduction:", nhifDeduction);
+  console.log("NSSF Deductions:", nssfDeductions);
 
-alert("Your PAYE is: " + paye);
+  alert("Your Net Salary is: " + netSalary);
 }
 salaryCalculator();
