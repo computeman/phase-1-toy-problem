@@ -1,4 +1,5 @@
 <!-- ABOUT THE PROJECT -->
+# Net Salary Calculator
 ## About The Project
 
 This JavaScript code computes an employee's net wage using their basic pay, benefits, and a variety of deductions, including PAYE, NHIF, and NSSF. The user is prompted to enter their basic compensation and benefits before the program does the required calculations and displays the net wage.
