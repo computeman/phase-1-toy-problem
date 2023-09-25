@@ -95,7 +95,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@DaudiKM](https://twitter.com/DaudiKM) - daudimwanzia@gmail.com
 
-Project Link: [https://github.com/computeman/](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/computeman/](https://github.com/computeman/phase-1-toy-problem)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,4 +1,7 @@
 <-- ABOUT THE PROJECT -->
+## Title
+Speed Detector
+
 ## About The Project
 
 Based on the total number of demerit points accrued, this JavaScript code calculates the demerit points at a specific speed and determines whether the license should be suspended. The algorithm makes the necessary calculations by comparing the input speed with a predetermined speed limit.
@@ -14,7 +17,6 @@ This project was build using:
 
 1. HTML
 2. JavaScript
-
 
 
 <!-- GETTING STARTED -->
@@ -47,9 +49,9 @@ To use this code, you can follow these steps:
 
 2. Open the index.html file in a web browser.
 
-3. A prompt will appear asking you to enter your marks. Enter a number between 0 and 100 and click "OK".
+3. A prompt will appear asking you to enter your the speed of the vehicle. Enter a number and click "OK".
 
-4. An alert will display your calculated grade.
+4. A log will be displayed for your calculated grade.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +88,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@DaudiKM](https://twitter.com/DaudiKM) - daudimwanzia@gmail.com
 
-Project Link: [https://github.com/computeman/](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/computeman/](https://github.com/computeman/phase-1-toy-problem)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

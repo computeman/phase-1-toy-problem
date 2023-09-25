@@ -7,16 +7,17 @@ function salaryCalculator() {
   let grossPay = basSalary + benefit;
 
   //calculate paye based on gross salary.
+  let paye=0;
   if (grossPay > 800000) {
-    let paye = grossPay * 0.35;
+    paye = grossPay * 0.35;
   } else if (grossPay > 500000) {
-    let paye = grossPay * 0.325;
+    paye = grossPay * 0.325;
   } else if (grossPay > 32333) {
-    let paye = grossPay * 0.3;
+    paye = grossPay * 0.3;
   } else if (grossPay > 24000) {
-    let paye = grossPay * 0.25;
+    paye = grossPay * 0.25;
   } else {
-    let paye = grossPay * 0.1;
+    paye = grossPay * 0.1;
   }
 
   //create nhif raes array.
@@ -40,7 +41,6 @@ function salaryCalculator() {
     { min: 90000, max: 99999, deduction: 1600 },
     { min: 9000, max: Infinity, deduction: 1700 },
   ];
-}
 // Calculate nhif Deduction
 let nhifDeduction = 0;
 for (let nhifrate of nhifrates) {
@@ -61,6 +61,13 @@ for (const i of nssfrates) {
     nssfDeductions = grossPay * 0.06;
     break;
   }
-  let netSalary = grossPay - (paye + nhifDeduction + nssfDeductions);
-  console.log(netSalary);
 }
+let netSalary = grossPay - (paye + nhifDeduction + nssfDeductions);
+ console.log("Net Salary:", netSalary);
+ console.log("PAYE:", paye);
+ console.log("NHIF Deduction:", nhifDeduction);
+ console.log("NSSF Deductions:", nssfDeductions);
+
+alert("Your PAYE is: " + paye);
+}
+salaryCalculator();

@@ -1,4 +1,6 @@
 <-- ABOUT THE PROJECT -->
+## Title 
+Student Grade Generator
 ## About The Project
 
 Based on the marks that the user has entered, this JavaScript code determines the grade. The user is prompted to enter their scores on a scale of 0 to 100. The code then runs an integrity check to ensure the accuracy of the input, computes the appropriate grade, and presents the result to the user.
@@ -14,7 +16,6 @@ This project was build using:
 
 1. HTML
 2. JavaScript
-
 
 
 <!-- GETTING STARTED -->
@@ -85,7 +86,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@DaudiKM](https://twitter.com/DaudiKM) - daudimwanzia@gmail.com
 
-Project Link: [https://github.com/computeman/](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/computeman/](https://github.com/computeman/phase-1-toy-problem)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
