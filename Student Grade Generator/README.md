@@ -1,6 +1,5 @@
-<-- ABOUT THE PROJECT -->
-## Title 
-Student Grade Generator
+<!-- ABOUT THE PROJECT -->
+## Student Grade Generator
 ## About The Project
 
 Based on the marks that the user has entered, this JavaScript code determines the grade. The user is prompted to enter their scores on a scale of 0 to 100. The code then runs an integrity check to ensure the accuracy of the input, computes the appropriate grade, and presents the result to the user.
@@ -22,7 +21,7 @@ This project was build using:
 ## How it Works
 This is how the program works:
 
-1. The "Calculate Grade" button which can be associated with he functionality of this program is clicked by the user, which calls the getGrade function.
+1. The "Calculate Grade" button which can be associated with the functionality of this program is clicked by the user, which calls the getGrade function.
 2. When the user is prompted to submit their marks, the function puts the data in the marks variable.
 3. The parseFloat function is used to transform the marks variable into a floating-point number.
 4. The input is verified by an integrity check. An alert is shown and the function ends early if the mark is not a number or goes outside the range of 0 to 100.
@@ -32,7 +31,7 @@ This is how the program works:
 
 ### Installation
 
-1. Optional git software in vscode can be installed in order to clone a repsitory to the local machine.
+1. Optional git software in vscode can be installed in order to clone a repository to the local machine.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
