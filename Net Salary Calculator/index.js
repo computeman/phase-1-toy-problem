@@ -2,9 +2,7 @@ function salaryCalculator() {
   let basicSalary = prompt("Enter your basic salary without commas");
   let benefits = prompt("Enter your benefits");
   //convert to integer
-  basSalary = parseFloat(basicSalary);
-  benefit = parseFloat(benefits);
-  let grossPay = basSalary + benefit;
+  let grossPay = parseFloat(basicSalary) + parseFloat(benefits);
 
   //calculate paye based on gross salary.
   let paye = 0;
@@ -22,7 +20,7 @@ function salaryCalculator() {
 
   //create nhif raes array.
 
-  let nhifrates = [
+  let nhifRates = [
     { min: 0, max: 5999, deduction: 150 },
     { min: 6000, max: 7999, deduction: 300 },
     { min: 8000, max: 11999, deduction: 400 },
@@ -43,20 +41,20 @@ function salaryCalculator() {
   ];
   // Calculate nhif Deduction
   let nhifDeduction = 0;
-  for (let nhifrate of nhifrates) {
-    if (grossPay >= nhifrate.min && grossPay <= nhifrate.max) {
-      nhifDeduction = nhifrate.deduction;
+  for (let nhifRate of nhifRates) {
+    if (grossPay >= nhifRate.min && grossPay <= nhifRate.max) {
+      nhifDeduction = nhifRate.deduction;
       break;
     }
   }
 
-  let nssfrates = [
+  let nssfRates = [
     { min: 0, max: 6000 },
     { min: 6001, max: 18000 },
   ];
 
   let nssfDeductions = 0;
-  for (const i of nssfrates) {
+  for (const i of nssfRates) {
     if (grossPay >= i.min && grossPay <= i.max) {
       nssfDeductions = grossPay * 0.06;
       break;
@@ -70,6 +68,6 @@ function salaryCalculator() {
   console.log("NHIF Deduction:", nhifDeduction);
   console.log("NSSF Deductions:", nssfDeductions);
 
-  alert("Your Net Salary is: " + netSalary);
+  alert("Your Net Salary is: " + netSalary.toFixed(2));
 }
 salaryCalculator();

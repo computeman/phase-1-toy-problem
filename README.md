@@ -10,7 +10,7 @@ The Student Grade Generator is a function that prompts the user to input student
 - C: Marks between 49 and 59 (inclusive)
 - D: Marks between 40 and 49 (inclusive)
 - E: Marks less than 40
-
+s
 
 ## Challenge 2: Speed Detector (Toy Problem)
 
